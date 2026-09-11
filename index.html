@@ -438,7 +438,7 @@ let ytPlayer=null, ytReady=false, musicPlaying=false;
 function onYouTubeIframeAPIReady(){
   ytPlayer=new YT.Player("ytplayer",{
     videoId:"W1z_v3dBhX4",
-    playerVars:{autoplay:0,controls:0,loop:1,playlist:"zPWA5SX2uPc"},
+    playerVars:{autoplay:0,controls:0,loop:1,playlist:"W1z_v3dBhX4"},
     events:{
       onReady:function(){ ytReady=true; },
       onStateChange:function(e){ musicPlaying=(e.data===YT.PlayerState.PLAYING); updateMusicIcon(); }
